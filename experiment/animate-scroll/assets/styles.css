@@ -1,0 +1,42 @@
+* {
+	 box-sizing: border-box;
+}
+ .item {
+   width: 5.375em;
+   height: 5.375em;
+   padding: 0.5em;
+   background-color: orange;
+   text-align: center;
+	 color: #fff;
+	 font-size: 3em;
+   margin-bottom:30px;
+}
+
+#motion-demo {
+  motion-path: path ('M197.1,242.5V126.9c0-0.1,0-0.1,0-0.2c0-9.3-7.5-16.8-16.8-16.8s-16.8,7.5-16.8,16.8v115.8h0');
+  offset-path: path('M197.1,242.5V126.9c0-0.1,0-0.1,0-0.2c0-9.3-7.5-16.8-16.8-16.8s-16.8,7.5-16.8,16.8v115.8h0');
+  animation: move 3000ms 1 alternate ease-in-out;
+  width: 40px;
+  height: 40px;
+  background: cyan;
+}
+
+#rocket {
+  motion-path: path ('M223.4,346.2V49.8c0-0.2,0-0.3,0-0.5c0-23.8-19.3-43.2-43.2-43.2s-43.2,19.3-43.2,43.2v297h0');
+  offset-path: path('M223.4,346.2V49.8c0-0.2,0-0.3,0-0.5c0-23.8-19.3-43.2-43.2-43.2s-43.2,19.3-43.2,43.2v297h0');
+  animation: move 3000ms infinite ease-in-out;
+    offset-rotate: 90deg auto;
+}
+
+#motion-demo-rocket img#rocket {
+  height:23em;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}

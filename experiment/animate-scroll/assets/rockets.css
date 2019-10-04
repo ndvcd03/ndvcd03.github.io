@@ -1,0 +1,73 @@
+.launch {
+  motion-path: path ('M223.4,346.2V49.8c0-0.2,0-0.3,0-0.5c0-23.8-19.3-43.2-43.2-43.2s-43.2,19.3-43.2,43.2v297h0');
+  offset-path: path('M223.4,346.2V49.8c0-0.2,0-0.3,0-0.5c0-23.8-19.3-43.2-43.2-43.2s-43.2,19.3-43.2,43.2v297h0');
+  animation: move 3000ms infinite ease-in-out;
+    offset-rotate: 90deg auto;
+}
+
+.launch-2 {
+  animation: launch 6000ms infinite ease-in-out;
+
+}
+
+#motion-demo-rocket img
+ {
+  height:22em;
+}
+
+#motion-demo-rocket img#rocket-2 {
+  position:relative;
+  bottom:-500px;
+}
+
+.button {
+  padding:25px;
+  background-color:red;
+  color:#fff;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color:#64df69;
+  color:#246b27;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes launch {
+  0% {
+bottom: -500px;
+transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(-5deg);
+  }
+  15% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  35% {
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom:2000px;
+  }
+}
