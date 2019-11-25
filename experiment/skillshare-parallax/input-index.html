@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rich Armstrong Parallax Tutorial</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style media="screen">
+    .block,
+    .block2 {
+      background: #006064;
+      width: 100px;
+      height: 100vh;
+    }
+
+    .block2 {
+    width: 200px;
+    position: absolute;
+    right:0;
+    top:0;
+    }
+
+    .h-block,
+    .h-block2 {
+      background: #d91212;
+      width: 100vw;
+      height: 100px;
+      position:absolute;
+    }
+
+    .h-block {
+      top:0;
+      left:0;
+    }
+
+    .h-block2 {
+      height:200px;
+      background: blue;
+      bottom:0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block"></div>
+  <div class="block2"></div>
+  <div class="h-block"></div>
+  <div class="h-block2">
+
+  </div>
+
+  <script src="js/capturing-mouse-movement.js" charset="utf-8"></script>
+</body>
+
+</html>

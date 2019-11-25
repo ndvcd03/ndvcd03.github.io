@@ -1,0 +1,87 @@
+NOTES FROM Capturing Mouse Movement
+
+max position = windows width
+
+*********old way don't use.********
+fractionValue = currentMousePosition/maximumMousePosition
+**********************************************************
+
+f=mouse.x/window.width
+
+how do we calculate the fractionValue for a specified distance? Lets say 100px on the left to 200px on the right.
+
+
+****************** Input Theory *********************************************
+startValue = fractionValue = 0 if mouse.x = 100px
+
+endValue = fractionValue = 1 if mouse.x = window.width - 200px
+
+inputRange = endValue - startValue
+
+relativeCurrentMousePosition = currentMousePosition - startValue
+
+          EXAMPLE
+          relativeCurrentMousePosition = currentMousePosition - startValue
+
+          relativeCurrentMousePosition = 100 - 100px
+
+          relativeCurrentMousePosition = 0
+
+inputRange = startValue - endValue
+
+relativeCurrentMousePosition = currentMousePosition - startValue
+
+fractionValue = relativeCurrentMousePosition / inputRange
+
+
+
+****************** Output Theory *********************************************
+
+outputValue = outputStartValue + (fractionValue x outputRange)
+
+OR
+
+outputValue = outputEndValue - (fractionValue x outputRange)
+
+****************** Parallax Theory *********************************************
+itemOutput.x = output.x.current - (output.x.current * itemDepth)
+
+itemOutput.y = output.y.current - (output.y.current * itemDepth)
+
+          itemOutput.x = 45 - (45 * 0.5) = 22.5
+
+          itemOutput.x = 45 - (45 * 0) = 45
+          itemOutput.x = 45 - (45 * 1) = 0
+
+zIndexRange = 1000
+
+itemZIndex = zIndexRange - (zIndexRange * itemDepth)
+
+
+****************** Video 8 *********************************************
+depth
+When an item is further away it should be smaller. The scale should be relative to its depth.
+
+//maybe you don't want the items to be so small.
+itemScale = 1 - depth
+
+      scaleStart = 1
+      scaleEnd = 0.5
+      scaleRange = scaleEnd - scaleStart
+      itemScale = scaleStart + (scaleRange * depth)
+
+Blurry
+Items will appear blurrier the further away they get.
+
+      blurStartDepth = 0.5 //when items will become blurry
+      blurRange = 14 //how blurry an item can get
+
+      itemBlur = (depth - blurStartDepth) * blurRange
+
+
+****************** Video 10 *********************************************
+Parallax on scroll
+  scrollY input fraction value that I can connect my output values to
+  – the further away an element is the quicker it will be moving in the opposite direction to the scroll direction... this is actually not how physics actually works. Things that are closer to you appear to move quicker than objects further away.
+
+  maximum we can scroll is the document height minus the window height.

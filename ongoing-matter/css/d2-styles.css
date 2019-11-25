@@ -1,0 +1,123 @@
+/* styles.css sheet for Ongoing-matter parallax-2 test. ongoing-matter/index.html */
+body {
+  background-color: #cc0000;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.parallax-container {
+  height: 125vh;
+  background-color: #cc0000;
+  position: relative;
+}
+
+/* .parallax-container.one {
+  background-color: #a7e3f4;
+}
+
+.parallax-container.two {
+  background-color: #d4a7f4;
+} */
+
+/* ********** Images ************** */
+.parallax-container img {
+  position: absolute;
+}
+
+img.folded-paper {
+  /* width: 62.916667%; */
+  width: 63.82%;
+  /* right: 13.546875%; */
+  right:14.48vw;
+}
+
+img.date {
+  /* width: 22.588542%; */
+  width: 21.90%;
+  top:23.47vw;
+  left:4.36vw;
+}
+
+
+img.exonerate-him {
+  /* width: 11.28125%; */
+  width: 10.94%;
+  top:26.39vw;
+  left:14.65vw;
+}
+
+img.date,
+img.exonerate-him {
+  z-index:99;
+}
+
+img.om-logo {
+  /* width: 24.078125%; */
+  width: 23.35%;
+  top: 5.75vw;
+  left:4.38vw;
+  /* left: 4.572916667%; */
+}
+
+/* ************ Xs *************** */
+img.gold-xs {
+  width: 75.598958%;
+  top: 18.33333333%;
+  right: 25.26041667%;
+}
+
+img.gold-x1 {
+  width:1.86%;
+  top:38.6vw;
+  left:-.91vw;
+}
+
+img.gold-x2 {
+  width:4.97%;
+  top:22.14vw;
+  left:20.66vw;
+}
+
+img.gold-x3 {
+  width:3.09%;
+  top:45.39vw;
+  left:34.76vw;
+}
+
+img.gold-x4 {
+  width:4.64%;
+  top:36.51vw;
+  left:44.83vw;
+}
+
+img.gold-x5 {
+  width:2.35%;
+  top:9.61vw;
+  left:46.22vw;
+}
+
+img.gold-x6 {
+  width:3.26%;
+  top:24.14vw;
+  right:45.86vw;
+}
+
+img.gold-x7 {
+  width:1.86%;
+  top:51.20vw;
+  right:36.61vw;
+}
+
+img.gold-x8 {
+  width:2.17%;
+  top:30.125vw;
+  right:27.61vw;
+}
+
+img.white-xs {
+  /* width: 33.385417%; */
+  width: 32.37%;
+  top: -.6vw;
+  /* right: 3.734375%; */
+  right:6.7vw;
+}

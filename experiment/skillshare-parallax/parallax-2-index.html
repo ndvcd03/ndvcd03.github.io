@@ -1,0 +1,65 @@
+<!-- This is the html file for the video 8 on Rich Armstrong Skillshare Parallax Course  -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rich Armstrong Parallax Tutorial – Video 8</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style media="screen">
+    .parallax-item {
+      height: 300px;
+      width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -150px;
+      margin-left: -150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parallax-item img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .one img {
+      transform: rotate(30deg);
+    }
+
+    .two img {
+      transform: rotate(-45deg);
+    }
+
+    .three img {
+      transform: rotate(60deg);
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- data-depth – 0.1 is the closet and 0.7 is the furtherst away. -->
+  <div class="parallax-item one" data-depth="0.1">
+    <img src="assets/parallax-asset-1.png" alt="">
+  </div>
+  <div class="parallax-item two" data-depth="0.3">
+    <img src="assets/parallax-asset-2.png" alt="">
+  </div>
+  <!-- items with a data-depth="1" don't move -->
+  <div class="parallax-item three" data-depth=".9">
+    <img src="assets/parallax-asset-4.png" alt="">
+  </div>
+  <!-- <div class="parallax-item four" data-depth=""></div> -->
+
+
+  <!-- SCRIPTS SECTION -->
+  <script src="js/parallax-2.js" charset="utf-8"></script>
+</body>
+
+</html>

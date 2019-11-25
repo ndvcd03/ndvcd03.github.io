@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rich Armstrong Parallax Tutorial</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style media="screen">
+    .parallax-item {
+      background-color: #000;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -100px;
+    }
+
+    /* .one {
+      background-color: #517102;
+    } */
+
+    .two {
+      background-color: #f06292;
+    }
+
+    .three {
+      background-color: #42a5f5;
+    }
+
+    .four {
+      background-color: #025771;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- data-depth – 0.1 is the closet and 0.7 is the furtherst away. -->
+  <div class="parallax-item one" data-depth="0.1"></div>
+  <div class="parallax-item two" data-depth="0.3"></div>
+  <div class="parallax-item three" data-depth="0.6"></div>
+  <!-- <div class="parallax-item four" data-depth=""></div> -->
+
+
+<!-- SCRIPTS SECTION -->
+  <script src="js/parallax-1.js" charset="utf-8"></script>
+</body>
+
+</html>
