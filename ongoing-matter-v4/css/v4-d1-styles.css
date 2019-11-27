@@ -229,7 +229,8 @@ a.name {
 a {
   text-decoration: none;
   color: #1D1513;
-  background-color: #edd77525;
+  background-color: #F0A11350;
+
 }
 
 a.location,
@@ -245,7 +246,7 @@ a.location,
 }
 
 a:hover {
-  background-color: #EDD775;
+  background-color: #edd775;
 }
 
 #location {
