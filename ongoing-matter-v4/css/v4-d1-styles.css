@@ -33,8 +33,8 @@ body {
 img.folded-paper {
   width: 63.82%;
   right: 6.67vw;
-  top:-59.61vw;
-  transition:all 3s linear;
+  /* top:-59.61vw;
+  transition:all 3s linear; */
 }
 
 img.folded-paper.paper-move {
