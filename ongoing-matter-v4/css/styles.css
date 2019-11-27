@@ -255,7 +255,8 @@ a:hover {
 
 /* ********** FOOTER SECTION ****************** */
 footer {
-  /* height: 20vw; */
+  box-sizing: border-box;
+  height: 18.59vw;
   width: 100vw;
   background-color: #1D1513;
   color: #DDD9D5;
