@@ -1,0 +1,331 @@
+/* styles.css sheet for Ongoing-matter parallax-3 test. ongoing-matter/draft-3.html */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  overflow-x: hidden;
+  color: #1D1513;
+}
+
+.parallax-container {
+  /* height: 125vh; */
+  height: 60vw;
+  background-color: #cc0000;
+  position: relative;
+}
+
+/* .parallax-container.one {
+  background-color: #a7e3f4;
+} */
+.parallax-container.two {
+  background-color: #fff;
+  height: auto;
+}
+
+/* ********** Images ************** */
+.parallax-container img {
+  position: absolute;
+}
+
+img.folded-paper {
+  width: 63.82%;
+  right: 6.67vw;
+}
+
+.date,
+.tagline {
+  color: #DDD9D5;
+  font-style: normal;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.date {
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-size: 2vw;
+  /* 35/16 */
+  /* font-size: 2.1875rem; */
+  /* width: 21.90%; */
+  top: 23.47vw;
+  left: 8.03vw;
+  z-index: 2;
+}
+
+.tagline {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 600;
+  /* 30/16 */
+  font-size: 2vw;
+  line-height: 2.125vw;
+  /* font-size: 1.875rem; */
+  /* line-height: 2.2734375rem; */
+  /* width: 21.32%; */
+  top: 30.66vw;
+  left: 22.67vw;
+}
+
+img.om-logo {
+  /* width: 24.078125%; */
+  width: 23.35%;
+  top: 5.55vw;
+  left: 8.03vw;
+  z-index: 99;
+}
+
+/* ************ Xs *************** */
+img.gold-x1 {
+  width: 1.86%;
+  top: 38.41vw;
+  left: -.91vw;
+}
+
+img.gold-x2 {
+  width: 4.97%;
+  top: 21.95vw;
+  left: 22.67vw;
+}
+
+img.gold-x3 {
+  width: 3.09%;
+  top: 45.19vw;
+  left: 34.76vw;
+}
+
+img.gold-x4 {
+  width: 4.64%;
+  top: 36.31vw;
+  left: 44.83vw;
+}
+
+img.gold-x5 {
+  width: 2.35%;
+  top: 9.41vw;
+  left: 46.22vw;
+}
+
+img.gold-x6 {
+  width: 3.26%;
+  top: 23.93vw;
+  right: 38.05vw;
+}
+
+img.gold-x7 {
+  width: 1.86%;
+  top: 51vw;
+  right: 28.8vw;
+}
+
+img.gold-x8 {
+  width: 2.17%;
+  top: 29.92vw;
+  right: 19.8vw;
+}
+
+img.white-xs {
+  width: 32.37%;
+  top: -.86vw;
+  /* right:6.7vw; */
+  right: -1.67vw;
+}
+
+/* Section 2 */
+.parallax-container.two {
+  padding-top: 2.775vw;
+}
+
+.rule-line {
+  height: .63vw;
+  width: 7.19vw;
+  background-color: #1D1513;
+  margin-bottom: 2.81vw;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  width: 83.20vw;
+  margin: 0 auto;
+}
+
+.information:first-of-type {
+  margin-top: 5.63vw;
+  margin-bottom: 9.84vw;
+}
+
+.information:last-of-type {
+  padding-bottom: 9.84vw;
+}
+
+.information h2 {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5625rem;
+  margin-bottom: 4.61vw;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.information h4 {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+.right-column {
+  /* margin-left: 8.03vw; */
+  width: 49.45vw;
+}
+
+.left-column {
+  width: 26.25vw;
+}
+
+.left-column p,
+.right-column p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p.sarah {
+  margin-bottom: 4.61vw;
+}
+
+p.funding {
+  font-size: .8rem;
+  width: 21.69vw;
+  margin-top: 4.61vw;
+}
+
+.bold-all-caps,
+.name {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .25px;
+}
+
+.name,
+.exhibiting-artists h4 {
+  margin-bottom: 1.56vw;
+}
+
+.exhibiting-artists h4 {
+  margin-top:0;
+}
+
+a.name {
+  display:inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #1D1513;
+  background-color: #edd77525;
+}
+
+a.location,
+.exhibiting-artists a {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+.exhibiting-artists a {
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #EDD775;
+}
+
+/* ********** FOOTER SECTION ****************** */
+footer {
+  height: 5vw;
+  width: 100vw;
+  background-color: #1D1513;
+}
+
+/* ********************************************** Treasure Trove of Information ********************* */
+/* FONTS &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&****************(((((((((((((((((((((())))))))))))))))))))))
+Neue Haas Unica W1G Regular
+font-family: neue-haas-unica, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Neue Haas Unica W1G Italic
+font-family: neue-haas-unica, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Neue Haas Unica W1G Bold
+font-family: neue-haas-unica,sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Neue Haas Unica W1G Black
+font-family: neue-haas-unica, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+Prestige Elite Std Regular
+font-family: prestige-elite-std, monospace;
+font-weight: 400;
+font-style: normal;
+
+Prestige Elite Std Bold
+font-family: prestige-elite-std, monospace;
+font-weight: 700;
+font-style: normal;
+*/
+/*
+COLORS &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&****************(((((((((((((((((((((())))))))))))))))))))))
+
+Headline Black
+color:#1D1513;
+
+Smoking Gun
+color:#584C41;
+
+Whisper Campaign
+color:#DDD9D5;
+
+Liberty Blue
+color: #0F1334;
+
+Patriot Blue
+color:#185AD5;
+
+Vigilant Blue
+color:#478BB9;
+
+Valor Red
+color:#59000B;
+
+Constance Red
+color:#860915;
+
+Mandate Red
+color:#C62308;
+
+Halcyon Yellow
+color:#9E6B0C;
+
+Republic Yellow
+color:#F0A113;
+
+Deference Yellow
+color:#EDD775;
+
+*/
