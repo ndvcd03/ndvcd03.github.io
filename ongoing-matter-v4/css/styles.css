@@ -1,38 +1,12 @@
-/* styles.css sheet for Ongoing-matter parallax-4 test. ongoing-matter-v4/index.html */
-
-
-/*
-
-
-
-– Calls to action at the bottom of website
-
-
-
-– send email to people with press release and gauge interest in helping us promote our project.
-
-– Calls to action for press releases
-1. Designer interested in designing your own Mueller Report? Get in touch with us!
-2. Read the Report
-3. Contact your congressional representitives
-4. Get involved in politics on the local level
-
-
-
-*/
-
-
-
-
+/* styles.css sheet for Ongoing Matter Splash Page */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: black;
+  background-color: #1D1513;
   margin: 0;
   overflow-x: hidden;
-  color: #1D1513;
 }
 
 .parallax-container {
@@ -42,9 +16,6 @@ body {
   position: relative;
 }
 
-/* .parallax-container.one {
-  background-color: #a7e3f4;
-} */
 .parallax-container.two {
   background-color: #fff;
   height: auto;
@@ -58,14 +29,7 @@ body {
 img.folded-paper {
   width: 63.82%;
   right: 6.67vw;
-  /* top:-59.61vw;
-  transition:all 3s linear; */
 }
-
-img.folded-paper.paper-move {
-  top:0;
-}
-
 
 .date,
 .tagline {
@@ -80,9 +44,6 @@ img.folded-paper.paper-move {
   font-family: prestige-elite-std, monospace;
   font-weight: 400;
   font-size: 2vw;
-  /* 35/16 */
-  /* font-size: 2.1875rem; */
-  /* width: 21.90%; */
   top: 23.47vw;
   left: 8.03vw;
   z-index: 2;
@@ -91,18 +52,13 @@ img.folded-paper.paper-move {
 .tagline {
   font-family: neue-haas-unica, sans-serif;
   font-weight: 600;
-  /* 30/16 */
   font-size: 2vw;
   line-height: 2.125vw;
-  /* font-size: 1.875rem; */
-  /* line-height: 2.2734375rem; */
-  /* width: 21.32%; */
   top: 30.66vw;
   left: 22.67vw;
 }
 
 img.om-logo {
-  /* width: 24.078125%; */
   width: 23.35%;
   top: 5.55vw;
   left: 8.03vw;
@@ -187,15 +143,20 @@ img.white-xs {
 #location,
 #project-description,
 #exhibiting-artists,
-#creator-bios {
+#creator-bios,
+#call-to-action {
   margin-top: 9.84vw;
 }
 
 #project-description p:first-of-type {
-  margin-bottom:2vw;
+  margin-bottom: 3.13vw;
 }
 
-.information:last-of-type {
+#call-to-action p {
+  margin-bottom: 3.13vw;
+}
+
+.information.last {
   padding-bottom: 9.84vw;
 }
 
@@ -216,10 +177,9 @@ img.white-xs {
   font-size: 1.25rem;
 }
 
-.left-column p,
-.right-column p {
+p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: prestige-elite-std, monospace;
   font-weight: 400;
   font-style: normal;
@@ -237,10 +197,10 @@ p.funding {
 .bold-all-caps,
 .name {
   font-family: neue-haas-unica, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
-  letter-spacing: .25px;
+  letter-spacing: 3px;
 }
 
 .name {
@@ -259,7 +219,6 @@ a {
   text-decoration: none;
   color: #1D1513;
   background-color: #F0A11350;
-
 }
 
 a.location,
@@ -296,9 +255,42 @@ a:hover {
 
 /* ********** FOOTER SECTION ****************** */
 footer {
-  height: 5vw;
+  /* height: 20vw; */
   width: 100vw;
   background-color: #1D1513;
+  color: #DDD9D5;
+  /* font-size: 1rem; */
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer .information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width:150px;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #EDD775;
+  background-color: rgba(0,0,0,0);
+  margin-bottom: 1.13vw;
+}
+
+footer a:hover {
+  color:#1D1513;
+}
+
+footer .information {
+  margin-top: 5.63vw;
+  margin-bottom:5.63vw;
 }
 
 /********** Media Queries *************/
@@ -312,7 +304,7 @@ footer {
     justify-content: space-between;
   }
 
-  .information:first-of-type {
+  .information.first {
     margin-top: 5.63vw;
     margin-bottom: 9.84vw;
   }
@@ -324,8 +316,12 @@ footer {
     margin-top: 0;
   }
 
-  .information:last-of-type {
+  .information.last {
     padding-bottom: 9.84vw;
+  }
+
+  p {
+    font-size: 1.25rem;
   }
 
   p.funding {
@@ -339,8 +335,21 @@ footer {
     width: 49.45vw;
   }
 
+  .right-column.call-to-action {
+
+  }
+
   .left-column {
     width: 26.25vw;
+  }
+
+  .bold-all-caps,
+  .name {
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .25px;
   }
 
   #location {
@@ -357,6 +366,12 @@ footer {
 
   #exhibiting-artists {
     order: 3;
+  }
+  #exhibiting-artists2 {
+    order: 5;
+  }
+  #call-to-action {
+    order:6;
   }
 }
 
