@@ -117,7 +117,6 @@ img.gold-x8 {
 img.white-xs {
   width: 32.37%;
   top: -.86vw;
-  /* right:6.7vw; */
   right: -1.67vw;
 }
 
@@ -256,6 +255,7 @@ a:hover {
 /* ********** FOOTER SECTION ****************** */
 footer {
   box-sizing: border-box;
+  padding-top: 5.63vw;
   height: 18.59vw;
   width: 100vw;
   background-color: #1D1513;
@@ -287,11 +287,6 @@ footer a {
 
 footer a:hover {
   color:#1D1513;
-}
-
-footer .information {
-  margin-top: 5.63vw;
-  margin-bottom:5.63vw;
 }
 
 /********** Media Queries *************/

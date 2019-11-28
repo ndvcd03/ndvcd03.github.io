@@ -29,10 +29,9 @@
 }
 
 body {
-  background-color: black;
+  background-color: #1D1513;
   margin: 0;
   overflow-x: hidden;
-  color: #1D1513;
 }
 
 .parallax-container {
@@ -42,9 +41,6 @@ body {
   position: relative;
 }
 
-/* .parallax-container.one {
-  background-color: #a7e3f4;
-} */
 .parallax-container.two {
   background-color: #fff;
   height: auto;
@@ -161,7 +157,6 @@ img.gold-x8 {
 img.white-xs {
   width: 32.37%;
   top: -.86vw;
-  /* right:6.7vw; */
   right: -1.67vw;
 }
 
