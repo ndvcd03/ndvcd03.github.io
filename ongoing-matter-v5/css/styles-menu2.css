@@ -14,6 +14,7 @@ body {
   height: 75vw;
   background-color: #cc0000;
   position: relative;
+  margin-top: 46px;
 }
 
 .two,
@@ -34,7 +35,7 @@ nav {
   max-width: 300px;
   margin-left: 0px;
   position: fixed;
-  z-index: 6;/
+  z-index: 6;
   top: 0;
   left: 0;
   background-color: #1D1513;
@@ -65,44 +66,57 @@ nav a {
   transition: .3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-/* nav a:hover {
-  color: #f1f1f1;
-} */
 /* Position and style the close button (top right corner) */
 nav #closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
-  background-color:transparent;
-  color:#edd775;
+  background-color: transparent;
+  color: #edd775;
   border: none;
 }
 
 nav #closebtn:hover {
-  background-color:#edd775;
-  color:#1d1513;
+  background-color: #edd775;
+  color: #1d1513;
   cursor: pointer;
 }
 
 /* The button used to open the sidebar */
 #openbtn {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
   font-size: 1.5em;
   cursor: pointer;
   background-color: transparent;
-  color: #1D1513;
+  color: #f1f1f1;
   padding: 10px 15px;
   border: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
+}
+
+#openbtn span {
+  font-size: 1em;
+  color: #584C41;
+}
+
+#openbtn span:hover {
+  color: #1d1513;
 }
 
 #openbtn:hover {
   background-color: #edd775;
+  color: #1D1513;
   cursor: pointer;
+}
+
+.full-bar {
+  width: 100%;
+  background-color: #1D1513;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
