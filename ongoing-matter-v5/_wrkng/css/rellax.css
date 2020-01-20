@@ -1,0 +1,59 @@
+html,
+body {
+  color: #223;
+  font-size: 21pt;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-size: 21pt;
+  line-height: 1.5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+nav a {
+  color: inherit;
+}
+
+.col {
+  text-align: center;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+h4 {
+  text-align: center;
+}
+
+.container {
+  outline: 1px solid #eed;
+  font-size: 42pt;
+  padding: 37.5vh 12.5vw;
+}
+
+.block {
+  background: #223;
+  color: #eed;
+  line-height: 25vh;
+  text-align: right;
+  padding: 0 42pt;
+  position: relative;
+}
+
+span {
+  background: #eed;
+  color: #223;
+  line-height: 25vh;
+  text-align: left;
+  padding: 0 42pt;
+  display: block;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
